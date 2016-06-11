@@ -638,7 +638,8 @@ public class Board
 		string[] spaces = new string[40]{"Go", "Mediterranean Avenue", "Community Chest", "Baltic Avenue", "Income Tax", "Reading Railroad", "Oriental Avenue", "Chance", "Vermont Avenue", "Connecticut Avenue", "Jail", "St. Charles Place", "Electric Company", "States Avenue", "Virginia Avenue", "Pennsylvania Railroad", "St. James Place", "Community Chest", "Tennessee Avenue", "New York Avenue", "Free Parking", "Kentucky Avenue", "Chance", "Indiana Avenue", "Illinois Avenue", "B&O Railroad", "Atlantic Avenue", "Ventnor Avenue", "Water Works", "Marvin Gardens", "Go To Jail", "Pacific Avenue", "North Carolina Avenue", "Community Chest", "Pennsylvania Avenue", "Short Line", "Chance", "Park Place", "Luxury Tax", "Boardwalk"};
 		int[] mortgages = new int[40] {0, 30, 0, 30, 0, 100, 50, 0, 50, 60, 0, 70, 75, 70, 80, 100, 90, 0, 90, 100, 0, 110, 0, 110, 120, 100, 130, 130, 75, 140, 0, 150, 0, 150, 160, 100, 0, 175, 0, 200};
 		string[] colorGroups = new string[40]{null, "brown", null, "brown", null, "RR", "powder", null, "powder", "powder", null, "pink", "UTIL", "pink", "pink", "RR", "orange", null,"orange", "orange", null, "red", null, "red", "red", "RR", "yellow", "yellow", "UTIL", "yellow", null, "green", "green", null, "green", "RR", null, "blue", null, "blue"};
-		int[,] rents = new int[40, 7] { {-200, -200, -200, -200, -200, -200, -200}, {2, 4, 10, 30, 90, 160, 250}, {0, 0, 0, 0, 0, 0, 0}, {4, 8, 20, 60, 180, 320, 450}, {200, 200, 200, 200, 200, 200, 200}, {25, 50, 100, 200, 200, 200, 200}, {6, 12, 30, 90, 270, 400, 550}, {0, 0, 0, 0, 0, 0, 0}, {6, 12, 30, 90, 270, 400, 550}, {8, 16, 40, 100, 300, 450, 600}, {0, 0, 0, 0, 0, 0, 0}, {10, 20, 50, 150, 450, 625, 750}, {0, 0, 0, 0, 0, 0, 0}, {10, 20, 50, 150, 450, 625, 750}, {12, 24, 60, 180, 500, 700, 900}, {25, 50, 100, 200, 200, 200, 200}, {14, 28, 70, 200, 550, 750, 950}, {0, 0, 0, 0, 0, 0, 0}, {14, 28, 70, 200, 550, 750, 950}, {16, 32, 80, 220, 600, 800, 1000}, {0, 0, 0, 0, 0, 0, 0}, {18, 36, 90, 250, 700, 875, 1050}, {0, 0, 0, 0, 0, 0, 0}, {18, 36, 90, 250, 700, 875, 1050}, {20, 40, 100, 300, 750, 925, 1100}, {25, 50, 100, 200, 200, 200, 200}, {22, 44, 110, 330, 800, 975, 1150}, {22, 44, 110, 330, 800, 975, 1150}, {0, 0, 0, 0, 0, 0, 0}, {24, 48, 120, 360, 850, 1025, 1200}, {0, 0, 0, 0, 0, 0, 0}, {26, 52, 130, 390, 900, 1100, 1275}, {26, 52, 130, 390, 900, 1100, 1275}, {0, 0, 0, 0, 0, 0, 0}, {28, 52, 150, 450, 1000, 1200, 1400}, {25, 50, 100, 200, 200, 200, 200}, {0, 0, 0, 0, 0, 0, 0}, {35, 70, 175, 500, 1100, 1300, 1500}, {100, 100, 100, 100, 100, 100, 100}, {50, 100, 200, 600, 1400, 1700, 2000} };			for (int i = 0; i < 40; i++) {
+		int[,] rents = new int[40, 7] { {-200, -200, -200, -200, -200, -200, -200}, {2, 4, 10, 30, 90, 160, 250}, {0, 0, 0, 0, 0, 0, 0}, {4, 8, 20, 60, 180, 320, 450}, {200, 200, 200, 200, 200, 200, 200}, {25, 50, 100, 200, 200, 200, 200}, {6, 12, 30, 90, 270, 400, 550}, {0, 0, 0, 0, 0, 0, 0}, {6, 12, 30, 90, 270, 400, 550}, {8, 16, 40, 100, 300, 450, 600}, {0, 0, 0, 0, 0, 0, 0}, {10, 20, 50, 150, 450, 625, 750}, {0, 0, 0, 0, 0, 0, 0}, {10, 20, 50, 150, 450, 625, 750}, {12, 24, 60, 180, 500, 700, 900}, {25, 50, 100, 200, 200, 200, 200}, {14, 28, 70, 200, 550, 750, 950}, {0, 0, 0, 0, 0, 0, 0}, {14, 28, 70, 200, 550, 750, 950}, {16, 32, 80, 220, 600, 800, 1000}, {0, 0, 0, 0, 0, 0, 0}, {18, 36, 90, 250, 700, 875, 1050}, {0, 0, 0, 0, 0, 0, 0}, {18, 36, 90, 250, 700, 875, 1050}, {20, 40, 100, 300, 750, 925, 1100}, {25, 50, 100, 200, 200, 200, 200}, {22, 44, 110, 330, 800, 975, 1150}, {22, 44, 110, 330, 800, 975, 1150}, {0, 0, 0, 0, 0, 0, 0}, {24, 48, 120, 360, 850, 1025, 1200}, {0, 0, 0, 0, 0, 0, 0}, {26, 52, 130, 390, 900, 1100, 1275}, {26, 52, 130, 390, 900, 1100, 1275}, {0, 0, 0, 0, 0, 0, 0}, {28, 52, 150, 450, 1000, 1200, 1400}, {25, 50, 100, 200, 200, 200, 200}, {0, 0, 0, 0, 0, 0, 0}, {35, 70, 175, 500, 1100, 1300, 1500}, {100, 100, 100, 100, 100, 100, 100}, {50, 100, 200, 600, 1400, 1700, 2000} };
+		for (int i = 0; i < 40; i++) {
 			int[] passRents = new int[7];
 			for (int jj = 0; jj < 7; jj++) {
 				passRents [jj] = rents [i, jj];
@@ -646,7 +647,33 @@ public class Board
 			}
 			tiles.Add (new Tile (spaces [i], values [i], passRents, mortgages [i], colorGroups [i]));
 		}
+		string[] chanceTexts = new string[16] {"Advance to Go, Collect $200", "Bank pays you dividend of $50.", "You have been elected chairman of the board. Pay each player $50.", "Advance to the nearest railroad. If unowned, you may buy it from the bank. If owned, pay owner twice the rental to which they are otherwise entitled.", "Advance to St. Charles Place. If you pass Go, collect $200.", "Advance to the nearest utility. If unowned, you may buy it from the bank. If owned, pay owner 10 times the amount shown on the dice.", "Your building loan matures, collect $150.", "Make general repairs on all your property. Pay $25 for each house, $100 for each hotel.", "Advance to the nearest railroad. If unowned, you may buy it from the bank. If owned, pay owner twice the rental to which they are otherwise entitled.", "Get out of jail free. This card may be kept until needed or traded.", "Speeding fine $15.", "Go back 3 spaces.", "Go directly to jail. Do not pass go. Do not collect $200.", "Take a trip to Reading Railroad. If you pass Go, collect $200.", "Advance to Illinois Avenue. If you pass Go, collect $200.", "Advance to Boardwalk."};
+		bool[] chanceM = new bool[16] {false, true, null, null, false, null, true, null, null, null, true, null, null, false, false, false}; //move is false, money is true
+		int[] chanceValues = new int[16] {0, 50, null, null, 11, null, 150, null, null, null, -15, null, null, 5, 24, 39};
+		string[] commChestTexts = new string[16] {"You are assessed for street repairs. Pay $40 for each house and $115 for each house you own.", "From sale of stock, you get $50.", "Today is your birthday. Collect $10 from each player.", "Bank error in your favor. Collect $200.", "Income tax refund. Collect $20.", "School fees. Pay $50.", "Advance to Go. Collect $200.", "Go directly to jail. Do not pass Go. Do not collect $200.", "You inherit $100.", "You have won second prize in a beauty contest. Collect $10.", "Life insurance matures. Collect $100.", "Get out of jail free. This card may be kept until needed or traded.", "Hospital fees. Pay $100.", "Holiday fund matures. Collect $100.", "Doctor's fees. Pay $50.", "Recieve $25 consultancy fee."};
+		bool commChestM = new bool[16] {null, true, null, true, true, true, false, null, true, true, true, null, true, true, true, true};
+		int[] commChestValues = new int[16] {null, 50, null, 200, 20, -50, 0, null, 100, 10, 100, null -100, 100, -50, 25};
+		for(int i = 0; i < 16; i++)
+		{
+			chanceCards.Add(new Card(chanceTexts[i], chanceM[i], chanceValues[i]));
+			commChests.Add(new Card(commChestValues[i], commChestM[i], commChestValues[i]));
+		}
+		chanceCards = Shuffle(chanceCards);
+		commChests = Shuffle(commChests);
 		Debug.Log ("BOARD COMPLETE");
+	}
+
+	public ArrayList Shuffle (ArrayList deck)
+	{
+		int max = deck.Count;
+		ArrayList newList = new ArrayList();
+		for (int i = 0; i < max; i++) {
+			System.Random rnd = new System.Random ((int)DateTime.Now.Ticks);
+			int select = rnd.Next (1, deck.Count);
+			newList.Add(deck[select]);
+			deck.RemoveAt(select);
+		}
+		return newList;
 	}
 }
 
@@ -753,14 +780,11 @@ public class Property
 
 public class Card
 {
-	public bool type;
-	//comm chest or chance
 	public string text;
 	public Action command;
 
-	public Card (bool in_type, string in_text, bool m, int value)
+	public Card (string in_text, bool m, int value)
 	{
-		type = in_type;
 		text = in_text;
 		command = new Action (m, value);
 	}
@@ -770,6 +794,7 @@ public class Action
 {
 	public bool m;
 	//money or motion
+	//move is false, money is true
 	public int value;
 
 	public Action (bool in_m, int in_value)
